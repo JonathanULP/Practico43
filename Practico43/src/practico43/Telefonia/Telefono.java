@@ -24,7 +24,7 @@ public abstract class Telefono {
     }
     
     
-    public abstract boolean Llamar();
+    public abstract boolean Llamar(long nroDestino);
    
 
     public long getNumero() {
