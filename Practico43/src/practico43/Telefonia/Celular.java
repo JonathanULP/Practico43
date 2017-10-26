@@ -22,7 +22,7 @@ public class Celular extends Telefono{
     
     public boolean Llamar(long nroDestino)
     {
-        System.out.println("Llamada realizada al numero:"+" "+nroDestino);
+        System.out.println("Llamada realizada al numero: "+nroDestino);
         return true;
     }
     
@@ -30,7 +30,7 @@ public class Celular extends Telefono{
     {
         if(mensaje!=null)
         {
-            System.out.println(mensaje+ '\n'+ "de:"+nroDestino);
+            System.out.println(mensaje+ '\n'+ "De: "+nroDestino);
             return true;
         }
         

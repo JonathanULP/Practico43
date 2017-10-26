@@ -13,14 +13,18 @@ public class Persona {
         this.nombre=nombre;
     }
     
-    public void llamarMensajear(Telefono telefono, long nroDestino, String mensaje)
+     public void llamarMensajear(Telefono telefono, long nroDestino, String mensaje)
     {
-        
+        if (telefono instanceof Celular){
+            Celular cel =(Celular)telefono;
+            cel.enviarMensaje(nroDestino, mensaje);
+        }
+            
     }
     
     public void llamarMensajear(Telefono telefono, long nroDestino)
     {
-        
+        telefono.Llamar(nroDestino);
     }
     
     
